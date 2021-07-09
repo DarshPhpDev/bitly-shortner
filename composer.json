@@ -1,0 +1,32 @@
+{
+    "name": "darshphpdev/bitly-shortner",
+    "description": "Shorten Long Urls Using Bitly Api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mustafa Ahmed",
+            "email": "mustafa.softcode@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload" : {
+        "psr-4" : {
+            "DarshPhpDev\\BitlyShortner\\" : "src/"
+        },
+        "files": [            
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DarshPhpDev\\BitlyShortner\\BitlyServiceProvider"
+            ],
+            "aliases": {
+                "Bitly": "DarshPhpDev\\BitlyShortner\\Bitly"
+            }
+        }
+    },
+}
