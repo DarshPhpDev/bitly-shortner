@@ -32,6 +32,7 @@ php artisan vendor:publish --tag="bitlyconfig"
 use Bitly;
 
 return Bitly::shorten('https://www.youtube.com');
+```
 
 ## Credits
 
